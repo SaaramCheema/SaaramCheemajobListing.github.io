@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/bg-header-desktop.svg">
+  </header>
+  <div class="dropdown-container">
+    <label for="roleDropdown">Role:</label>
+    <select id="roleDropdown">
+      <option value="None">None</option>
+      <option value="Frontend">Frontend</option>
+      <option value="Backend">Backend</option>
+      <option value="Fullstack">Fullstack</option>
+    </select>
+  
+    <label for="levelDropdown">Level:</label>
+    <select id="levelDropdown">
+      <option value="None">None</option>
+      <option value="Junior">Junior</option>
+      <option value="Midweight">Midweight</option>
+      <option value="Senior">Senior</option>
+    </select>
+
+    <label for="languagesDropdown">Languages:</label>
+    <select id="languagesDropdown">
+      <option value="none">None</option>
+      <option value="Python">Python</option>
+      <option value="Ruby">Ruby</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+    </select>
+    
+    <label for="toolsDropdown">Tools:</label>
+    <select id="toolsDropdown">
+      <option value="None">None</option>
+      <option value="React">React</option>
+      <option value="Sass">Sass</option>
+      <option value="Vue">Vue</option>
+      <option value="Django">Django</option>
+      <option value="RoR">Ruby on Rails (RoR)</option>
+    </select>
+  </div>
+  
+  <div class="AllOfTheJobs">
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/photosnap.svg" id="jobImage">
+    </div>
+      <h2>Photosnap</h2>
+      <span class="new">NEW!</span>
+      <span class="featured">FEATURED</span>
+    </div>
+    <div class="job-title">
+      <h3>Senior Frontend Developer</h3>
+      <div class="job-info">     
+      <span class="postedAt">1d ago</span>
+      <span class="contract">Full Time</span>
+      <span class="location">USA only</span>
+    </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Frontend</span>
+      <span class="level">Senior</span>
+      <span class="languages">HTML</span>
+      <span class="languages">CSS</span>
+      <span class="languages">JavaScript</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+    <div class="job-listing">
+      <div class="job-header">
+        <div class="job-image">
+          <img src="./images/manage.svg"> 
+        </div>
+        <h2>Manage</h2> 
+        <span class="new">NEW!</span>
+        <span class="featured">FEATURED</span>
+      </div>
+      <div class="job-title">
+        <h3>Fullstack Developer</h3> 
+        <div class="job-info">
+          <span class="postedAt">1d ago</span> 
+          <span class="contract">Part Time</span>
+          <span class="location">Remote</span>
+        </div>
+      </div>
+      <div class="job-details">
+        <span class="role">Fullstack</span> 
+        <span class="level">Midweight</span> 
+        <span class="languages">Python</span>
+        <span class="tools">React</span>
+      </div>
+      <span class="delete-job">
+        <img src="./images/delete.png">
+      </span>
+    </div>
+    <!-- Account -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/account.svg">
+      </div>
+      <h2>Account</h2>
+      <span class="new">NEW!</span>
+      <span class="featured">FEATURED</span>
+    </div>
+    <div class="job-title">
+      <h3>Junior Frontend Developer</h3>
+      <div class="job-info">
+        <span class="postedAt">2d ago</span>
+        <span class="contract">Part Time</span>
+        <span class="location">USA only</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Frontend</span>
+      <span class="level">Junior</span>
+      <span class="languages">JavaScript</span>
+      <span class="tools">React</span>
+      <span class="tools">Sass</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+
+<!-- MyHome -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/myhome.svg">
+      </div>
+      <h2>MyHome</h2>
+    </div>
+    <div class="job-title">
+      <h3>Junior Frontend Developer</h3>
+      <div class="job-info">
+        <span class="postedAt">5d ago</span>
+        <span class="contract">Contract</span>
+        <span class="location">USA only</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Frontend</span>
+      <span class="level">Junior</span>
+      <span class="languages">CSS</span>
+      <span class="languages">JavaScript</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+
+<!-- LoopStudios -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/loop-studios.svg">
+      </div>
+      <h2>Loop Studios</h2>
+    </div>
+    <div class="job-title">
+      <h3>Software Engineer</h3>
+      <div class="job-info">
+        <span class="postedAt">1w ago</span>
+        <span class="contract">Full Time</span>
+        <span class="location">Worldwide</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Fullstack</span>
+      <span class="level">Midweight</span>
+      <span class="languages">JavaScript</span>
+      <span class="tools">Ruby</span>
+      <span class="tools">Sass</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+  <!-- Faceit -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/faceit.svg">
+      </div>
+      <h2>FaceIt</h2>
+    </div>
+    <div class="job-title">
+      <h3>Junior Backend Developer</h3>
+      <div class="job-info">
+        <span class="postedAt">2w ago</span>
+        <span class="contract">Full Time</span>
+        <span class="location">UK only</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Backend</span>
+      <span class="level">Junior</span>
+      <span class="languages">Ruby</span>
+      <span class="tools">RoR</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+  <!-- Shortly -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/shortly.svg">
+      </div>
+      <h2>Shortly</h2>
+    </div>
+    <div class="job-title">
+      <h3>Junior Developer</h3>
+      <div class="job-info">
+        <span class="postedAt">2w ago</span>
+        <span class="contract">Full Time</span>
+        <span class="location">Worldwide</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Frontend</span>
+      <span class="level">Junior</span>
+      <span class="languages">HTML</span>
+      <span class="tools">Sass</span>
+      <span class="languages">JavaScript</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+  <!-- Insure -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/insure.svg">
+      </div>
+      <h2>Insure</h2>
+    </div>
+    <div class="job-title">
+      <h3>Junior Frontend Developer</h3>
+      <div class="job-info">
+        <span class="postedAt">2w ago</span>
+        <span class="contract">Full Time</span>
+        <span class="location">USA only</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Frontend</span>
+      <span class="level">Junior</span>
+      <span class="tools">Vue</span>
+      <span class="languages">JavaScript</span>
+      <span class="tools">Sass</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+    <!-- Eyecam Co. -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/eyecam-co.svg">
+      </div>
+      <h2>Eyecam Co.</h2>
+    </div>
+    <div class="job-title">
+      <h3>Fullstack Engineer</h3>
+      <div class="job-info">
+        <span class="postedAt">3w ago</span>
+        <span class="contract">Full Time</span>
+        <span class="location">Worldwide</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Fullstack</span>
+      <span class="level">Midweight</span>
+      <span class="languages">JavaScript</span>
+      <span class="tools">Django</span>
+      <span class="languages">Python</span>
+    </div>
+    <span class="delete-job">
+      <img src="./images/delete.png">
+    </span>
+  </div>
+      <!-- The air filter company -->
+  <div class="job-listing">
+    <div class="job-header">
+      <div class="job-image">
+        <img src="./images/the-air-filter-company.svg">
+      </div>
+      <h2>The Air Filter Company</h2>
+    </div>
+    <div class="job-title">
+      <h3>Front-end Dev</h3>
+      <div class="job-info">
+        <span class="postedAt">1mo ago</span>
+        <span class="contract">Part Time</span>
+        <span class="location">Worldwide</span>
+      </div>
+    </div>
+    <div class="job-details">
+      <span class="role">Frontend</span>
+      <span class="level">Junior</span>
+      <span class="tools">React</span>
+      <span class="tools">Sass</span>
+      <span class="languages">JavaScript</span>
+    </div>
+    <button class="delete-job">
+      <img src="./images/delete.png">
+    </button>
+  </div>
+    </div>
+    <div class="popup" id="jobDetailsPopup">
+      <div class="popup-content">
+        <img src="" id="popupImage">
+        <h2 id="popupCompany"></h2>
+        <h3 id="popupTitle"></h3>
+        <p><strong>Posted:</strong> <span id="popupPosted"></span></p>
+        <p><strong>Contract:</strong> <span id="popupContract"></span></p>
+        <p><strong>Location:</strong> <span id="popupLocation"></span></p>
+        <p><strong>Role:</strong> <span id="popupRole"></span></p>
+        <p><strong>Level:</strong> <span id="popupLevel"></span></p>
+        <p><strong>Tools:</strong> <span id="popupTools"></span></p>
+        <p><strong>Languages:</strong> <span id="popupLanguages"></span></p>
+        <button class="close-popup">Close</button>
+      </div>
+    </div>
+  <button class="add-button" onclick="openPopup()">+</button>
+    
+    <div class="popup" id="jobPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Add a New Job</h2>
+            <form id="jobForm">
+                <!-- Input fields for job details -->
+                <input type="text" placeholder="Company Name" required>
+                <input type="text" placeholder="Job Title" required>
+                <input type="text" placeholder="Contract Type" required>
+                <input type="text" placeholder="Location" required>
+                <input type="text" placeholder="Role" required>
+                <input type="text" placeholder="Level" required>
+                <input type="text" placeholder="Tools" required>
+                <input type="text" placeholder="Languages" required>
+                <button type="button" onclick="addJob()">Add Job</button>
+            </form>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Saaram Islam Cheema</a>.
+  </div>
+</body>
+</html>
